@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
   },
   profilepic: {
     type: String,
-    default: "",
+    default: " ",
   },
   posts: {
     type: Array,
