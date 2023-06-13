@@ -158,6 +158,7 @@ router.post("/resetpassword", (req, res) => {
 //Sign in
 router.post("/signin", (req, res) => {
   const { email, password } = req.body;
+  console.log("Password" + password);
   if (!email || !password) {
     return res.status(422).json({ error: "Please add all the fields" });
   } else {

@@ -34,6 +34,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  allmessages: {
+    type: Array,
+    default: [],
+  },
 });
 userSchema.pre("save", async function (next) {
   const user = this;
